@@ -1,9 +1,12 @@
 import React from "react";
+import { ToolScreen } from "./screens/ToolScreen";
 
-import "./App.css";
-
-function App() {
-  return <div className="App"></div>;
-}
+const App = () => {
+  return (
+    <div className="App">
+      <ToolScreen />
+    </div>
+  );
+};
 
 export default App;

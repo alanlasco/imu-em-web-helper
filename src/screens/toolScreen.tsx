@@ -1,5 +1,10 @@
 import React from "react";
+import { ListOfWinners } from "../components/ListOfWinners";
 
-export const toolScreen = () => {
-  return <></>;
+export const ToolScreen = () => {
+  return (
+    <>
+      <ListOfWinners />
+    </>
+  );
 };
