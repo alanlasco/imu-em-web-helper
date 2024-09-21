@@ -1,16 +1,5 @@
 import React, { useState, useEffect } from "react";
-
-type WinnerProps = {
-  onWinnerChange: (
-    name: string,
-    times: number,
-    event: string,
-    goldCredits: number,
-    imes: number
-  ) => void;
-  goldCredits: number; // Valor fijo
-  imes: number; // Valor fijo
-};
+import { WinnerProps } from "../types/winnerType";
 
 export const Winner: React.FC<WinnerProps> = ({
   onWinnerChange,
@@ -48,15 +37,17 @@ export const Winner: React.FC<WinnerProps> = ({
         value={name}
         onChange={handleNameChange}
       />
+
       <input
         type="number"
         placeholder="Times Won"
         value={times}
         onChange={handleTimesChange}
       />
+
       <input
         type="text"
-        placeholder="Event"
+        placeholder="Event Types"
         value={event}
         onChange={handleEventChange}
       />

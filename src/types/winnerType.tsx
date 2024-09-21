@@ -6,4 +6,6 @@ export type WinnerProps = {
     goldCredits: number,
     imes: number
   ) => void;
+  goldCredits: number; // Valor fijo
+  imes: number; // Valor fijo
 };
