@@ -31,10 +31,13 @@ const ChemicalSymbol = () => {
           <ul className="list">
             {elementsList.map((element, index) => (
               <li key={index}>
+                <p>!Chemical element #{index + 1}</p>{" "}
+                {/* Muestra el número del elemento basado en el índice */}
                 <span>!{element.name} = ? </span>
                 <p>
                   !{element.name} {">"} {element.symbol}
                 </p>
+                <span className="separador"></span>
               </li>
             ))}
           </ul>

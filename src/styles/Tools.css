@@ -25,3 +25,11 @@ button {
 .ChemicalSymbolContainer {
     height: 100%;
 }
+
+.separador {
+    display: flex;
+    width: 100%;
+    height: .1px;
+    padding: 2px;
+    background-color: grey;
+}
