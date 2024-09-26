@@ -3,7 +3,7 @@
     /* Usar grid para el contenedor */
     grid-template-columns: repeat(2, 1fr);
     /* Dos columnas de igual tamaño */
-    height: 100%;
+    min-height: 100vh;
     /* Altura total de la ventana */
 
     /* Espacio entre las columnas */
