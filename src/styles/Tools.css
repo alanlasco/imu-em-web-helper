@@ -1,0 +1,16 @@
+.listOfTools {
+    display: flex;
+    /* Mantener como flex */
+    flex-direction: column;
+    /* Cambia a row para alinearlos horizontalmente */
+    align-items: center;
+    /* Alinea los elementos al inicio */
+    justify-content: flex-start;
+    /* Alinea elementos a la izquierda */
+    height: 100vh;
+    /* Mantén esto si deseas que ocupe toda la altura */
+    width: 45%;
+    /* Esto está bien */
+    margin-right: 2em;
+    /* Ajusta el margen si es necesario */
+}

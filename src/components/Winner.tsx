@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { WinnerProps } from "../types/winnerType";
+import "../styles/Winner.css";
 
 export const Winner: React.FC<WinnerProps> = ({
   onWinnerChange,
@@ -30,8 +31,9 @@ export const Winner: React.FC<WinnerProps> = ({
   };
 
   return (
-    <div>
+    <div className="Winner">
       <input
+        className="name"
         type="text"
         placeholder="Name"
         value={name}
@@ -39,6 +41,7 @@ export const Winner: React.FC<WinnerProps> = ({
       />
 
       <input
+        className="times"
         type="number"
         placeholder="Times Won"
         value={times}
@@ -46,6 +49,7 @@ export const Winner: React.FC<WinnerProps> = ({
       />
 
       <input
+        className="events"
         type="text"
         placeholder="Event Types"
         value={event}

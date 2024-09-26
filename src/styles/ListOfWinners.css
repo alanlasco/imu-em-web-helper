@@ -1,3 +1,50 @@
 .winnersContainer {
-    height: 100vh
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+
+    margin-left: 1.5rem;
+    height: 100%;
+    /* Asegúrate de que ocupe toda la altura disponible */
+    overflow-y: auto;
+    /* Agrega desplazamiento vertical si es necesario */
+
+}
+
+.configWinner {
+    margin-left: 2em;
+}
+
+.inputGoldCredits {
+    width: 3rem;
+    margin-right: 1rem;
+}
+
+.inputImes {
+    width: 3rem;
+    margin-right: 1rem;
+}
+
+.textContainer {
+    display: flex;
+    justify-content: flex-start;
+    padding: .5rem;
+
+}
+
+.nameText {
+    width: 5.5rem;
+    margin-right: 1.6rem;
+}
+
+.timesText {
+    width: 1.5rem;
+    margin-right: 1.6rem;
+}
+
+.eventsText {
+    width: 5.5rem;
+    margin-right: 1.6rem;
 }

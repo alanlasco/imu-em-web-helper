@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { ChemicalElement } from "../interfaces/Inchemicalelement";
 
-function useRandomCountry() {
+function useRandomElement() {
   const [elements, setElements] = useState<ChemicalElement[]>([]);
   const [randomElement, setRandomElement] = useState<ChemicalElement | null>(
     null
@@ -21,13 +21,13 @@ function useRandomCountry() {
   }, []);
 
   // Función para actualizar el país aleatorio
-  const getRandomCountry = () => {
+  const getRandomElement = () => {
     if (elements.length > 0) {
       setRandomElement(elements[Math.floor(Math.random() * elements.length)]);
     }
   };
 
-  return { randomElement, getRandomCountry };
+  return { randomElement, getRandomElement };
 }
 
-export default useRandomCountry;
+export default useRandomElement;

@@ -61,29 +61,36 @@ export const ListOfWinners = () => {
 
   return (
     <>
-      <div className="winnersContainer">
-        <article className="configWinner">
-          <span>
-            <label htmlFor="goldCredits">Amount of GC: </label>
-            <input
-              type="number"
-              name="goldCredits"
-              value={goldCredits}
-              onChange={handleGoldCreditsChange}
-            />
-            <label htmlFor="imes">Amount of IMES: </label>
-            <input
-              type="number"
-              name="imes"
-              value={imes}
-              onChange={handleImesChange}
-            />
-            <button onClick={addWinner}>Add Winner</button>
-          </span>
-        </article>
+      <article className="configWinner">
+        <span>
+          <label htmlFor="goldCredits">Amount of GC: </label>
+          <input
+            className="inputGoldCredits"
+            type="number"
+            name="goldCredits"
+            value={goldCredits}
+            onChange={handleGoldCreditsChange}
+          />
+          <label htmlFor="imes">Amount of IMES: </label>
+          <input
+            className="inputImes"
+            type="number"
+            name="imes"
+            value={imes}
+            onChange={handleImesChange}
+          />
+          <button onClick={addWinner}>Add Winner</button>
+        </span>
+      </article>
 
+      <div className="winnersContainer">
         <section className="List">
           <h2>Winners List:</h2>
+          <div className="textContainer">
+            <span className="nameText">Winner: </span>
+            <span className="timesText">T/: </span>
+            <span className="eventsText">Event/s: </span>
+          </div>
           {winners.map((winner, index) => (
             <Winner
               key={index}
