@@ -1,18 +1,20 @@
 import React, { useState } from "react";
-import useRandomElement from "../hooks/getRandomElement";
-import "../styles/Tools.css";
-import { ChemicalElement } from "../interfaces/Inchemicalelement"; // Asegúrate de que la ruta sea correcta
 
-const AtomicNumber = () => {
-  const { randomElement, getRandomElement } = useRandomElement();
-  const [elementsList, setElementsList] = useState<ChemicalElement[]>([]); // Estado para almacenar los elementos
+import "../styles/Tools.css";
+// Asegúrate de que la ruta sea correcta
+import useRandomCountry from "../hooks/getRandomCountry";
+import { Country } from "../interfaces/Incountry";
+
+const CapitalAndCountries = () => {
+  const { randomCountry, getRandomCountry } = useRandomCountry();
+  const [elementsList, setElementsList] = useState<Country[]>([]); // Estado para almacenar los elementos
   const [isVisible, setIsVisible] = useState<boolean>(true); // Estado para controlar la visibilidad
 
   const handleAddElement = () => {
-    if (randomElement) {
-      setElementsList((prevList) => [...prevList, randomElement]); // Agrega el nuevo elemento al array
+    if (randomCountry) {
+      setElementsList((prevList) => [...prevList, randomCountry]); // Agrega el nuevo elemento al array
     }
-    getRandomElement(); // Obtén un nuevo elemento
+    getRandomCountry(); // Obtén un nuevo elemento
   };
 
   const handleHide = () => {
@@ -21,21 +23,20 @@ const AtomicNumber = () => {
 
   return (
     <div className="ChemicalSymbolContainer">
-      <h2>Atomic Number</h2>
-      <button onClick={handleAddElement}>Get element + Atomic Number</button>
+      <h2>Capitals & Countries</h2>
+      <button onClick={handleAddElement}>Get a Country + Capital</button>
 
       {/* Mostrar la lista de elementos si es visible */}
       {isVisible && (
         <>
-          <h3>Elements:</h3>
           <ul className="list">
             {elementsList.map((element, index) => (
               <li key={index}>
-                <p>!Atomic Number #{index + 1}</p>{" "}
+                <p>!Cap!tals & Countries #{index + 1}</p>{" "}
                 {/* Muestra el número del elemento basado en el índice */}
-                <span>!{element.name} = ? </span>
+                <span>!{element.country} = ? </span>
                 <p>
-                  !{element.name} {">"} {element.atomicNumber}
+                  !{element.country} {">"} {element.capital}
                 </p>
                 <hr className="separador"></hr>
               </li>
@@ -50,4 +51,4 @@ const AtomicNumber = () => {
   );
 };
 
-export default AtomicNumber;
+export default CapitalAndCountries;
