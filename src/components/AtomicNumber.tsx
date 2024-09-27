@@ -3,7 +3,7 @@ import useRandomElement from "../hooks/getRandomElement";
 import "../styles/Tools.css";
 import { ChemicalElement } from "../interfaces/Inchemicalelement"; // Asegúrate de que la ruta sea correcta
 
-const ChemicalSymbol = () => {
+const AtomicNumber = () => {
   const { randomElement, getRandomElement } = useRandomElement();
   const [elementsList, setElementsList] = useState<ChemicalElement[]>([]); // Estado para almacenar los elementos
   const [isVisible, setIsVisible] = useState<boolean>(true); // Estado para controlar la visibilidad
@@ -21,8 +21,8 @@ const ChemicalSymbol = () => {
 
   return (
     <div className="ChemicalSymbolContainer">
-      <h2>Chemical Symbol</h2>
-      <button onClick={handleAddElement}>Get element + symbol</button>
+      <h2>Atomic number</h2>
+      <button onClick={handleAddElement}>Get element + Atomic Number</button>
 
       {/* Mostrar la lista de elementos si es visible */}
       {isVisible && (
@@ -31,11 +31,11 @@ const ChemicalSymbol = () => {
           <ul className="list">
             {elementsList.map((element, index) => (
               <li key={index}>
-                <p>!Chemical element #{index + 1}</p>{" "}
+                <p>!Atomic Number #{index + 1}</p>{" "}
                 {/* Muestra el número del elemento basado en el índice */}
-                <span>!{element.symbol} = ? </span>
+                <span>!{element.name} = ? </span>
                 <p>
-                  !{element.symbol} {">"} {element.name}
+                  !{element.name} {">"} {element.atomicNumber}
                 </p>
                 <hr className="separador"></hr>
               </li>
@@ -50,4 +50,4 @@ const ChemicalSymbol = () => {
   );
 };
 
-export default ChemicalSymbol;
+export default AtomicNumber;

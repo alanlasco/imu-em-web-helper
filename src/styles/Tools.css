@@ -1,16 +1,12 @@
 .listOfTools {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-
-
-    margin-left: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Dos columnas con el mismo ancho */
+    grid-gap: 1rem;
+    /* Espaciado entre los elementos */
+    margin-left: 1rem;
     height: 100%;
-    /* Asegúrate de que ocupe toda la altura disponible */
     overflow-y: auto;
-    /* Agrega desplazamiento vertical si es necesario */
-    /* Ajusta el margen si es necesario */
 }
 
 ul {
@@ -27,9 +23,11 @@ button {
 }
 
 .separador {
-    display: flex;
+    border: none;
+
+    border-top: 1px solid #ccc;
+
+    margin: 1rem 0;
+
     width: 100%;
-    height: .1px;
-    padding: 2px;
-    background-color: grey;
 }
