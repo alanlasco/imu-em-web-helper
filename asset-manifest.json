@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/imu-em-web-helper/static/css/main.42caff33.css",
+    "main.js": "/imu-em-web-helper/static/js/main.85048d08.js",
+    "index.html": "/imu-em-web-helper/index.html",
+    "main.42caff33.css.map": "/imu-em-web-helper/static/css/main.42caff33.css.map",
+    "main.85048d08.js.map": "/imu-em-web-helper/static/js/main.85048d08.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.42caff33.css",
+    "static/js/main.85048d08.js"
+  ]
+}
