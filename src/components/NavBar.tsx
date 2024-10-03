@@ -69,7 +69,9 @@ export const Navbar = () => {
           <Link to="/scramble">Scramble</Link>
         </li>
       </ul>
+
       <div className="circle">
+        <span className="brand">NON-PK EVENTS</span>
         <div onClick={navToggle} className={toggleIcon}>
           <div className="line1"></div>
           <div className="line2"></div>

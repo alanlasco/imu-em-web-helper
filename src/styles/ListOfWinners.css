@@ -18,7 +18,7 @@
 }
 
 .inputGoldCredits {
-    width: 3rem;
+    width: 5rem;
     margin-right: 1rem;
 }
 
@@ -35,16 +35,16 @@
 }
 
 .nameText {
-    width: 5.5rem;
+    width: 8rem;
     margin-right: 1.6rem;
 }
 
 .timesText {
-    width: 1.5rem;
+    width: 3rem;
     margin-right: 1.6rem;
 }
 
 .eventsText {
-    width: 5.5rem;
+    width: 7.5rem;
     margin-right: 1.6rem;
 }

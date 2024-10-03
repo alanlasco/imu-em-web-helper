@@ -1,10 +1,3 @@
-*,
-*::after,
-*::before {
-    margin: 0;
-    box-sizing: border-box;
-}
-
 html {
     font-size: 62.5%;
 }
@@ -13,22 +6,13 @@ body {
     font-size: 1.6rem;
 }
 
-
 .nav {
-
-    /* background: linear-gradient(90deg, rgba(238, 193, 57, 0.938813025210084) 35%, rgba(152, 255, 152, 1) 50%); */
-    /* Cambia el color de fondo  */
     color: #fff;
-    /* Cambia el color del texto*/
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
+    right: 0;
+    width: 40%;
     z-index: 1000;
-    /* Asegura que el navbar esté sobre otros elementos */
-    /* -moz-box-shadow: 0px 7px 5px -4px rgba(0, 0, 0, 0.50); */
-    /* -webkit-box-shadow: 0px 7px 5px -4px rgba(0, 0, 0, 0.50); */
-    /* box-shadow: 0px 7px 5px -4px rgba(0, 0, 0, 0.50); */
 }
 
 .activo {
@@ -48,32 +32,28 @@ body {
     margin: 0 20px;
 }
 
-/* .nav-item:hover{ */
-/* color:rgb(255, 255, 255); */
-
-
-/* } */
 .nav a {
     text-decoration: none;
     color: #f0f0f0fa;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-    /* Cambia el color del texto según tus preferencias */
 }
 
 .nav a:hover {
-    color: #fff
+    color: #fff;
 }
 
-/* Estilos del contenido de la página */
-
-/* Estilos adicionales según tus preferencias */
 .brand {
-    margin-left: 60px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    float: left;
-    font-size: 25px;
+    margin: 2rem;
+    color: black;
     font-weight: bold;
+    position: absolute;
+    /* Cambia a absolute */
+    top: 1rem;
+    /* Ajusta la posición vertical */
+    left: 2rem;
+    /* Ajusta la posición horizontal para estar pegado al menú */
+    z-index: 1001;
+    /* Asegúrate de que esté sobre otros elementos */
 }
 
 .brand-2 {
@@ -100,51 +80,38 @@ body {
     z-index: 3;
 }
 
+.toggler {
+    background-color: #2d3037;
+    padding: 0.5rem;
+    border-radius: 70%;
+    margin-top: 1em;
+    margin-right: 8em;
+    cursor: pointer;
+    display: block;
+    float: inline-end;
+}
+
 .toggler div {
     width: 2.5rem;
     height: 0.2rem;
     margin: 0.5rem;
     background: #90ee90;
     transition: 0.4s ease-in;
-    align-items: center;
-
-
 }
 
-.toggler {
-    background-color: #2d3037;
-
-    padding: 0.5rem;
-    border-radius: 70%;
-    margin-top: 1em;
-    margin-right: 3em;
-    cursor: pointer;
-    display: block;
-    float: inline-end;
-}
-
-
-
-/*activar clase*/
 .nav-active {
     transform: translateX(0);
 }
 
-/*animaicon*/
-
-
-
+/* Animación */
 .toggle .line1 {
     transform: rotate(-45deg) translate(-4px, 5px);
-    /* Diagonal hacia arriba */
 }
 
 .toggle .line2 {
     opacity: 0;
-    /* Ocultar la línea del medio */
 }
 
 .toggle .line3 {
     transform: rotate(45deg) translate(-4px, -5px);
-    /* Diagonal hacia abajo */
 }
