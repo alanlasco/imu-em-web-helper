@@ -6,7 +6,7 @@ function useRandomCountry() {
   const [randomCountry, setRandomCountry] = useState<Country | null>(null);
 
   useEffect(() => {
-    fetch("/countries.json") // Asegúrate de que el archivo esté en la carpeta public
+    fetch("https://alanlasco.github.io/imu-em-web-helper/countries.json") // Asegúrate de que el archivo esté en la carpeta public
       .then((response) => response.json())
       .then((data) => {
         setCountries(data);

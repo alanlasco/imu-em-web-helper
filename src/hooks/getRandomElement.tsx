@@ -8,7 +8,9 @@ function useRandomElement() {
   );
 
   useEffect(() => {
-    fetch("/chemical-elements.json") // Asegúrate de que el archivo esté en la carpeta public
+    fetch(
+      "https://alanlasco.github.io/imu-em-web-helper/chemical-elements.json"
+    ) // Asegúrate de que el archivo esté en la carpeta public
       .then((response) => response.json())
       .then((data) => {
         setElements(data);

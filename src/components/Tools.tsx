@@ -3,6 +3,7 @@ import ChemicalSymbol from "./ChemicalSymbol";
 import "../styles/Tools.css";
 import AtomicNumber from "./AtomicNumber";
 import CapitalAndCountries from "./CapitalAndCountries";
+import ReverseWord from "./ReverseWord";
 
 export const Tools = () => {
   return (
@@ -10,6 +11,7 @@ export const Tools = () => {
       <ChemicalSymbol />
       <AtomicNumber />
       <CapitalAndCountries />
+      <ReverseWord />
     </div>
   );
 };
