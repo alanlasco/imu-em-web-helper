@@ -4,6 +4,7 @@ import "../styles/Tools.css";
 import AtomicNumber from "./AtomicNumber";
 import CapitalAndCountries from "./CapitalAndCountries";
 import ReverseWord from "./ReverseWord";
+import ScrambleWord from "./ScrambleWord";
 
 export const Tools = () => {
   return (
@@ -12,6 +13,7 @@ export const Tools = () => {
       <AtomicNumber />
       <CapitalAndCountries />
       <ReverseWord />
+      <ScrambleWord />
     </div>
   );
 };
