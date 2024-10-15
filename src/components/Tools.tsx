@@ -7,10 +7,8 @@ import "../styles/Tools.css"; // Asegúrate de que la ruta de los estilos sea co
 export const Tools = () => {
   return (
     <div className="listOfTools">
-      <BrowserRouter>
-        <Navbar />
-        <AnimatedRoutes />
-      </BrowserRouter>
+      <Navbar />
+      <AnimatedRoutes />
     </div>
   );
 };
