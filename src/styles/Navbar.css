@@ -6,13 +6,36 @@ body {
     font-size: 1.6rem;
 }
 
+.greenLight {
+    height: 6px;
+    background-color: #90ee90;
+    ;
+    box-shadow: #90ee90 0px 0px 25px -1px;
+    top: 0;
+
+}
+
 .nav {
-    color: #fff;
+    color: #ededed;
+    background: #2d3037;
+
+    border-bottom: 1px solid #3e414a;
+    border-radius: 4px;
+    box-shadow: inset rgba(255, 255, 255, 0.1) 0px 1px 0px, rgba(0, 0, 0, 0.12) 0px 2px 2px, rgba(0, 0, 0, 0.2) 0px 4px 14px;
     position: fixed;
     top: 0;
     right: 0;
-    width: 40%;
+    width: 50%;
     z-index: 1000;
+}
+
+.ulContainer {
+    padding-top: 1.3rem;
+    list-style: none;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .activo {
@@ -43,17 +66,14 @@ body {
 }
 
 .brand {
+    padding-top: 1rem;
     margin: 2rem;
-    color: black;
+    color: #fafafa;
     font-weight: bold;
     position: absolute;
-    /* Cambia a absolute */
-    top: 1rem;
-    /* Ajusta la posición vertical */
+    top: 0;
     left: 2rem;
-    /* Ajusta la posición horizontal para estar pegado al menú */
     z-index: 1001;
-    /* Asegúrate de que esté sobre otros elementos */
 }
 
 .brand-2 {
@@ -84,10 +104,10 @@ body {
     background-color: #2d3037;
     padding: 0.5rem;
     border-radius: 70%;
-    margin-top: 1em;
+    padding-bottom: 2.1rem;
     margin-right: 8em;
     cursor: pointer;
-    display: block;
+    /* display: block; */
     float: inline-end;
 }
 

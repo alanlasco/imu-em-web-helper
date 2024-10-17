@@ -1,11 +1,13 @@
 import React from "react";
 import { ToolScreen } from "./screens/ToolScreen";
 import { Footer } from "./components/Footer";
+import { Header } from "./components/Header";
 // import "./App.css";
 
 const App = () => {
   return (
     <div className="App">
+      <Header />
       <ToolScreen />
       <Footer />
     </div>

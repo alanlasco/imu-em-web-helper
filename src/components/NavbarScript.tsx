@@ -10,11 +10,15 @@ export const NavbarScript: React.FC<NavbarScriptProps> = ({
 }) => {
   return (
     <nav className="nav2">
+      <div className="greenLight"></div>
       <ul>
         <li>
-          <button onClick={() => console.log("EM Section clicked")}>
+          <a
+            href="https://forum.infinitymu.net/#event-masters-area.350"
+            target="_blank"
+          >
             EM Section
-          </button>
+          </a>
         </li>
         <li>
           <button onClick={() => setActiveComponent("winnerslist")}>
