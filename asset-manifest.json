@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/imu-em-web-helper/static/css/main.88443028.css",
-    "main.js": "/imu-em-web-helper/static/js/main.dde63a79.js",
+    "main.css": "/imu-em-web-helper/static/css/main.159f5ca8.css",
+    "main.js": "/imu-em-web-helper/static/js/main.bc4f5846.js",
     "index.html": "/imu-em-web-helper/index.html",
-    "main.88443028.css.map": "/imu-em-web-helper/static/css/main.88443028.css.map",
-    "main.dde63a79.js.map": "/imu-em-web-helper/static/js/main.dde63a79.js.map"
+    "main.159f5ca8.css.map": "/imu-em-web-helper/static/css/main.159f5ca8.css.map",
+    "main.bc4f5846.js.map": "/imu-em-web-helper/static/js/main.bc4f5846.js.map"
   },
   "entrypoints": [
-    "static/css/main.88443028.css",
-    "static/js/main.dde63a79.js"
+    "static/css/main.159f5ca8.css",
+    "static/js/main.bc4f5846.js"
   ]
 }
