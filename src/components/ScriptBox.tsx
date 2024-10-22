@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/TextBox.css";
+import mu from "../assets/mu.png";
 export const ScriptBox = () => {
   const [value, setValue] = useState("");
 
@@ -9,7 +10,10 @@ export const ScriptBox = () => {
 
   return (
     <div className="inputContainer">
-      <p className="Script">Your Script</p>
+      <div className="titleContainer">
+        <img className="muImg" src={mu} alt="MU Light" />
+        <span className="titleSection">Your Script:</span>
+      </div>
 
       <textarea
         className="inputTextBox"

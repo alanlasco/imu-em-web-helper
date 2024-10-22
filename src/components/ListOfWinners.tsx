@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Winner } from "./Winner"; // Asegúrate de que la ruta sea correcta
-
+import mu from "../assets/mu.png";
 import "../styles/ListOfWinners.css";
 // Componente principal que maneja la lista de ganadores
 export const ListOfWinners = () => {
@@ -62,6 +62,11 @@ export const ListOfWinners = () => {
   return (
     <>
       <article className="configWinner">
+        <div className="titleContainer">
+          <img className="muImg" src={mu} alt="MU Light" />
+          <span className="titleSection">List your Winners:</span>
+        </div>
+        <p className="description">Set the Multipliers: </p>
         <span>
           <label htmlFor="goldCredits">Amount of GC: </label>
           <input
@@ -79,13 +84,15 @@ export const ListOfWinners = () => {
             value={imes}
             onChange={handleImesChange}
           />
-          <button onClick={addWinner}>Add Winner</button>
         </span>
       </article>
 
       <div className="winnersContainer">
         <section className="List">
-          <h2>Winners List:</h2>
+          <span>
+            <p className="titleSectionSmaller">Winners List:</p>
+            <button onClick={addWinner}>Add Winner</button>
+          </span>
           <div className="textContainer">
             <span className="nameText">Winner: </span>
             <span className="timesText">T/: </span>
@@ -104,13 +111,12 @@ export const ListOfWinners = () => {
         </section>
 
         <section className="WinnersOutput">
-          <h2>All Winners:</h2>
+          <p className="titleSectionSmaller">All Winners:</p>
           {winners.map((winner, index) => (
             <div key={index}>
-              <p>
+              <p className="description">
                 Name: {winner.name} | Event: {winner.event} | Times Won:{" "}
-                {winner.times} | Gold Credits: {winner.goldCredits} | IMES:{" "}
-                {winner.imes}
+                {winner.times} | GC: {winner.goldCredits} | IMES: {winner.imes}
               </p>
             </div>
           ))}

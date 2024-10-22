@@ -1,11 +1,17 @@
 .winnersContainer {
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    color: #ededed;
 
 
-    margin-left: 1.5rem;
+    padding: 2rem;
+    background: #2d3037;
+    border-radius: 4px;
+    color: #ededed;
+
     height: 100%;
     /* Asegúrate de que ocupe toda la altura disponible */
     overflow-y: auto;
@@ -13,8 +19,65 @@
 
 }
 
+.titleSection {
+    font-size: 1.8em;
+
+    font-weight: 700;
+
+}
+
+.titleSectionSmaller {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+span p {
+    display: inline;
+    margin-right: 3rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.titleContainer {
+    display: flex;
+    align-items: center;
+    /* Alinea verticalmente */
+}
+
+.muImg {
+    height: auto;
+    margin-right: .5em;
+
+}
+
+button {
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background: #ff8a00;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.description {
+    font-size: .9em;
+    color: #979797;
+    font-weight: 700;
+}
+
 .configWinner {
-    margin-left: 2em;
+    margin-top: 2rem;
+
+    padding: 2rem;
+    background: #2d3037;
+    border-radius: 4px;
+    color: #ededed;
 }
 
 .inputGoldCredits {
@@ -25,26 +88,31 @@
 .inputImes {
     width: 3rem;
     margin-right: 1rem;
+
 }
 
 .textContainer {
     display: flex;
     justify-content: flex-start;
     padding: .5rem;
+    color: #ededed;
 
 }
 
 .nameText {
     width: 8rem;
+    color: #ededed;
     margin-right: 1.6rem;
 }
 
 .timesText {
     width: 3rem;
     margin-right: 1.6rem;
+    color: #ededed;
 }
 
 .eventsText {
     width: 7.5rem;
     margin-right: 1.6rem;
+    color: #ededed;
 }

@@ -10,3 +10,27 @@
     width: 90%;
     height: 90vh;
 }
+
+.titleSection {
+    font-size: 1.8em;
+
+    font-weight: 700;
+
+}
+
+.muImg {
+    height: auto;
+    margin-right: .5em;
+
+}
+
+.titleContainer {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #ededed;
+}
+
+textarea {
+    background: #bababb;
+    ;
+}

@@ -26,3 +26,20 @@
     border-right: 1px solid #ccc;
 
 }
+
+aside {
+    background: #424855;
+}
+
+input {
+    background: #2d3037;
+    border: 1px solid #4a4d58;
+    color: #ededed;
+    appearance: none;
+    border-radius: 4px;
+    outline: none;
+}
+
+textarea {
+    outline: none;
+}
