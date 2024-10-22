@@ -2,12 +2,12 @@
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+
     justify-content: flex-start;
     color: #ededed;
 
 
-    padding: 2rem;
+
     background: #2d3037;
     border-radius: 4px;
     color: #ededed;
@@ -16,6 +16,15 @@
     /* Asegúrate de que ocupe toda la altura disponible */
     overflow-y: auto;
     /* Agrega desplazamiento vertical si es necesario */
+
+}
+
+.greenLight {
+    height: 6px;
+    background-color: #90ee90;
+    ;
+    box-shadow: #90ee90 0px 0px 25px -1px;
+    top: 0;
 
 }
 
@@ -74,10 +83,14 @@ button {
 .configWinner {
     margin-top: 2rem;
 
-    padding: 2rem;
+
     background: #2d3037;
     border-radius: 4px;
     color: #ededed;
+}
+
+.container {
+    padding: 2rem;
 }
 
 .inputGoldCredits {
