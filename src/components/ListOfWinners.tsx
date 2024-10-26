@@ -1,10 +1,9 @@
-import React, { useState } from "react";
-import { Winner } from "./Winner"; // Asegúrate de que la ruta sea correcta
+import React, { useState, useEffect } from "react";
 import mu from "../assets/mu.png";
 import "../styles/ListOfWinners.css";
-// Componente principal que maneja la lista de ganadores
+
 export const ListOfWinners = () => {
-  const [goldCredits, setGoldCredits] = useState<number | string>(200);
+  const [goldCredits, setGoldCredits] = useState<number | string>(500);
   const [imes, setImes] = useState<number | string>(1);
   const [winners, setWinners] = useState<
     {
@@ -14,7 +13,19 @@ export const ListOfWinners = () => {
       goldCredits: number;
       imes: number;
     }[]
-  >([]);
+  >(() => {
+    const storedWinners = localStorage.getItem("winners");
+    return storedWinners ? JSON.parse(storedWinners) : [];
+  });
+
+  const [name, setName] = useState("");
+  const [event, setEvent] = useState("");
+  const [times, setTimes] = useState(1);
+
+  // Guardar los ganadores en el local storage cada vez que cambien
+  useEffect(() => {
+    localStorage.setItem("winners", JSON.stringify(winners));
+  }, [winners]);
 
   const handleGoldCreditsChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
@@ -27,36 +38,29 @@ export const ListOfWinners = () => {
   };
 
   const addWinner = () => {
-    setWinners([
-      ...winners,
-      {
-        name: "",
-        event: "",
-        times: 1,
-        goldCredits: Number(goldCredits),
-        imes: Number(imes),
-      },
-    ]);
+    if (name && event) {
+      // Solo agrega si hay un nombre y evento
+      setWinners((prevWinners) => [
+        ...prevWinners,
+        {
+          name,
+          event,
+          times,
+          goldCredits: Number(goldCredits),
+          imes: Number(imes),
+        },
+      ]);
+      // Limpiar campos después de agregar
+      setName("");
+      setEvent("");
+      setTimes(1);
+    }
   };
 
-  const handleWinnerChange = (
-    index: number,
-    name: string,
-    times: number,
-    event: string,
-    goldCredits: number,
-    imes: number
-  ) => {
-    const updatedWinners = [...winners];
-    updatedWinners[index] = {
-      ...updatedWinners[index],
-      name,
-      times,
-      event,
-      goldCredits,
-      imes,
-    };
-    setWinners(updatedWinners);
+  // Función para limpiar la lista de ganadores
+  const clearWinners = () => {
+    setWinners([]);
+    localStorage.removeItem("winners"); // Limpiar también el local storage
   };
 
   return (
@@ -94,32 +98,30 @@ export const ListOfWinners = () => {
         <div className="greenLight"></div>
         <div className="container">
           <section className="List">
-            <span>
-              <p className="titleSectionSmaller">Winners List:</p>
-              <button onClick={addWinner}>Add Winner</button>
-            </span>
+            <p className="titleSectionSmaller">Add Winner:</p>
             <div className="textContainer">
               <span className="nameText">Winner: </span>
-              <span className="timesText">T/: </span>
               <span className="eventsText">Event/s: </span>
             </div>
-            {winners.map((winner, index) => (
-              <Winner
-                key={index}
-                onWinnerChange={(name, times, event, goldCredits, imes) =>
-                  handleWinnerChange(
-                    index,
-                    name,
-                    times,
-                    event,
-                    goldCredits,
-                    imes
-                  )
-                }
-                goldCredits={Number(goldCredits)} // Asegúrate de que sea un número
-                imes={Number(imes)} // Asegúrate de que sea un número
-              />
-            ))}
+            <input
+              className="inputText"
+              type="text"
+              placeholder="IGN"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+            <input
+              className="inputText"
+              type="text"
+              placeholder="Event"
+              value={event}
+              onChange={(e) => setEvent(e.target.value)}
+            />
+            <button onClick={addWinner}>Add Winner</button>
+            <button className="buttonClear" onClick={clearWinners}>
+              Clear List
+            </button>{" "}
+            {/* Botón para limpiar */}
           </section>
 
           <section className="WinnersOutput">
@@ -127,9 +129,8 @@ export const ListOfWinners = () => {
             {winners.map((winner, index) => (
               <div key={index}>
                 <p className="description">
-                  Name: {winner.name} | Event: {winner.event} | Times Won:{" "}
-                  {winner.times} | GC: {winner.goldCredits} | IMES:{" "}
-                  {winner.imes}
+                  Name: {winner.name} | Event: {winner.event} | GC:{" "}
+                  {winner.goldCredits} | IMES: {winner.imes}
                 </p>
               </div>
             ))}

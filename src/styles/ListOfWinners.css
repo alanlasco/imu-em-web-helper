@@ -28,6 +28,11 @@
 
 }
 
+.inputText {
+    width: 8rem;
+    margin-right: 1em;
+}
+
 .titleSection {
     font-size: 1.8em;
 
@@ -68,6 +73,20 @@ button {
     align-items: center;
     border-radius: 4px;
     background: #ff8a00;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.buttonClear {
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background: #ff3300;
     color: #fff;
     text-decoration: none;
     border: 1px solid transparent;

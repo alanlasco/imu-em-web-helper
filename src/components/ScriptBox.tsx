@@ -1,11 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/TextBox.css";
 import mu from "../assets/mu.png";
-export const ScriptBox = () => {
-  const [value, setValue] = useState("");
 
-  const handleChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
-    setValue(event.target.value); // Actualiza el estado con el valor del textarea
+export const ScriptBox = () => {
+  const [value, setValue] = useState<string>(() => {
+    return localStorage.getItem("script") || "";
+  });
+
+  useEffect(() => {
+    localStorage.setItem("script", value);
+  }, [value]);
+
+  const clearScript = () => {
+    setValue("");
+    localStorage.removeItem("script");
   };
 
   return (
@@ -18,7 +26,7 @@ export const ScriptBox = () => {
       <textarea
         className="inputTextBox"
         value={value}
-        onChange={handleChange}
+        onChange={(e) => setValue(e.target.value)}
         placeholder="Write your Script here...."
         rows={4}
         cols={50}
@@ -28,6 +36,10 @@ export const ScriptBox = () => {
           borderRadius: "4px",
         }}
       />
+
+      <button className="buttonClear" onClick={clearScript}>
+        Clear Script
+      </button>
     </div>
   );
 };
