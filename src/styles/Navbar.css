@@ -48,7 +48,7 @@ body {
     margin: 0 auto;
     padding: 15px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 
@@ -110,7 +110,7 @@ body {
     margin-right: 8em;
     cursor: pointer;
     /* display: block; */
-    float: inline-end;
+    float: right;
 }
 
 .toggler div {
