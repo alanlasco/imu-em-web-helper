@@ -1,4 +1,16 @@
+
+.menu{
+    color: #90EE90;
+}
+.welcomeContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 700;
+    
+}
 .Em{
+    
     color: #90EE90;
     display: inline-block;
     font-weight: bold;
@@ -13,4 +25,21 @@
     margin-top: 2rem;
     color: #fafafa;
     font-size: 1.2em;
+    text-shadow: 0 0 0.05em #000, 0 0 0.05em #000, 0 0 0.05em #000;
+}
+.welcome{
+    font-size:  1.4em;
+   
+        display: flex;
+        align-items: center; /* Alinea la imagen y el texto en el centro verticalmente */
+        gap: 0.5rem; /* Espacio entre la imagen y el texto */
+      
+}
+
+.list{
+    list-style: circle;
+    color: #90EE90;
+}
+.listE{
+    margin: 1rem;
 }
