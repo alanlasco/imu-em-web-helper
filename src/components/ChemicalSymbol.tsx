@@ -21,14 +21,14 @@ const ChemicalSymbol = () => {
 
   return (
     <div className="ChemicalSymbolContainer">
-      <h2>Chemical Symbol</h2>
+      <h2 className="titleEvent">🏹Chemical Symbol<span className="bow">🏹</span> </h2>
       <button onClick={handleAddElement}>Get element + symbol</button>
 
       {/* Mostrar la lista de elementos si es visible */}
       {isVisible && (
         <>
-          <h3>Elements:</h3>
-          <ul className="list">
+          <h3 className="ElementText">Elements:</h3>
+          <ul className="listItems">
             {elementsList.map((element, index) => (
               <li key={index}>
                 <p>!Chemical element #{index + 1}</p>{" "}

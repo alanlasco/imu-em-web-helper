@@ -38,7 +38,7 @@ export const Home = () => {
       <p>This will allow you to make your script quicker</p>
       
       <ul className="list">
-      <li className="listEt">Right side:</li>
+      <li className="listEt">Left side:</li>
       <br />
         <li className="listE">Script: Paste your script there </li>
         <li className="listE">Winners: List your winners there </li>

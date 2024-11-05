@@ -14,7 +14,7 @@ export const AnimatedRoutes = () => {
   return (
     <AnimatePresence>
       <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<Home />} />
+        <Route path="/imu-em-web-helper" element={<Home />} />
         <Route path="/atomicnumber" element={<AtomicNumber />} />
         <Route path="/capitalsandcountries" element={<CapitalAndCountries />} />
         <Route path="/chemicalsymbol" element={<ChemicalSymbol />} />

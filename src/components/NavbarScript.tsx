@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/NavbarScript.css";
 import muLightImage from "../assets/i-MU-light.png";
+import { Link } from "react-router-dom";
 
 interface NavbarScriptProps {
   setActiveComponent: (component: "winnerslist" | "script") => void; // Prop para actualizar el componente activo
@@ -13,7 +14,7 @@ export const NavbarScript: React.FC<NavbarScriptProps> = ({
     <nav className="nav2">
       <div className="greenLight"></div>
       <ul>
-        <img className="imuImg" src={muLightImage} alt="MU Light" />
+      <Link to="/imu-em-web-helper"><img className="imuImg" src={muLightImage} alt="MU Light" /></Link>
 
         <li>
           <a

@@ -23,13 +23,13 @@ const CapitalAndCountries = () => {
 
   return (
     <div className="ChemicalSymbolContainer">
-      <h2>Capitals & Countries</h2>
+      <h2 className="titleEvent">🏹Capitals & Countries<span className="bow">🏹</span> </h2>
       <button onClick={handleAddElement}>Get a Country + Capital</button>
 
       {/* Mostrar la lista de elementos si es visible */}
       {isVisible && (
         <>
-          <ul className="list">
+          <ul className="listItems">
             {elementsList.map((element, index) => (
               <li key={index}>
                 <p>!Cap!tals & Countries #{index + 1}</p>{" "}

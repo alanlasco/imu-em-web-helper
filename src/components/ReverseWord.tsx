@@ -28,10 +28,12 @@ const ReverseWord = () => {
 
   return (
     <div className="ChemicalSymbolContainer">
-      <h2>Reverse Word</h2>
+      <h2 className="titleEvent">🏹Reversed Words<span className="bow">🏹</span> </h2>
       <label>
-        Word to be Reversed:
+      <span className="inputToolsText">Word to be Reversed: </span>
+        
         <input
+          className="inputTools"
           type="text"
           value={inputValue}
           onChange={handleInputChange}
@@ -43,7 +45,7 @@ const ReverseWord = () => {
       {/* Mostrar la lista de palabras invertidas si es visible */}
       {isVisible && (
         <>
-          <ul className="list">
+          <ul className="listItems">
             {elementsList.map((element, index) => (
               <li key={index}>
                 <p>!Reversed Word #{index + 1}</p>

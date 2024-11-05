@@ -35,10 +35,11 @@ const ScrambleWord = () => {
 
   return (
     <div className="ChemicalSymbolContainer">
-      <h2>Scramble</h2>
+      <h2 className="titleEvent">🏹Scramble<span className="bow">🏹</span> </h2>
       <label>
-        Word to be Scrambled:
+        <span className="inputToolsText">Word to be Scrambled: </span>
         <input
+        className="inputTools"
           type="text"
           value={inputValue}
           onChange={handleInputChange}
@@ -50,7 +51,7 @@ const ScrambleWord = () => {
       {/* Mostrar la lista de palabras invertidas si es visible */}
       {isVisible && (
         <>
-          <ul className="list">
+          <ul className="listItems">
             {elementsList.map((element, index) => (
               <li key={index}>
                 <p>!Scramble #{index + 1}</p>

@@ -29,7 +29,7 @@ export const Navbar = () => {
                 paginaActiva === "home" ? "nav-item activo" : "nav-item"
               }
             >
-              <Link to="/">Home</Link>
+              <Link to="/imu-em-web-helper">Home</Link>
             </li>
             <li
               onClick={() => setPaginaActiva("atomicnumber")}
