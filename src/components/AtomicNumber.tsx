@@ -15,6 +15,10 @@ const AtomicNumber = () => {
     getRandomElement(); // Obtén un nuevo elemento
   };
 
+  const handleClearList = () => {
+    setElementsList([]); // Vacía el array de elementos
+  };
+
   const handleHide = () => {
     setIsVisible(!isVisible); // Cambia la visibilidad de la lista
   };
@@ -27,12 +31,11 @@ const AtomicNumber = () => {
       {/* Mostrar la lista de elementos si es visible */}
       {isVisible && (
         <>
-          <h3>Elements:</h3>
+          <h3 className="ElementText">Elements:</h3>
           <ul className="listItems">
             {elementsList.map((element, index) => (
               <li key={index}>
                 <p>!Atomic Number #{index + 1}</p>{" "}
-                {/* Muestra el número del elemento basado en el índice */}
                 <span>!{element.name} = ? </span>
                 <p>
                   !{element.name} {">"} {element.atomicNumber}
@@ -43,8 +46,15 @@ const AtomicNumber = () => {
           </ul>
         </>
       )}
+
+      {/* Botón para ocultar o mostrar la lista */}
       <button onClick={handleHide} className="hide">
         {isVisible ? "Hide List" : "Show List"}
+      </button>
+
+      {/* Botón para limpiar la lista */}
+      <button onClick={handleClearList} className="buttonClear">
+        Clear List
       </button>
     </div>
   );

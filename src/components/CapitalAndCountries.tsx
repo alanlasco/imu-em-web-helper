@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-
 import "../styles/Tools.css";
-// Asegúrate de que la ruta sea correcta
 import useRandomCountry from "../hooks/getRandomCountry";
 import { Country } from "../interfaces/Incountry";
 
@@ -17,13 +15,19 @@ const CapitalAndCountries = () => {
     getRandomCountry(); // Obtén un nuevo elemento
   };
 
+  const handleClearList = () => {
+    setElementsList([]); // Vacía el array de elementos
+  };
+
   const handleHide = () => {
     setIsVisible(!isVisible); // Cambia la visibilidad de la lista
   };
 
   return (
     <div className="ChemicalSymbolContainer">
-      <h2 className="titleEvent">🏹Capitals & Countries<span className="bow">🏹</span> </h2>
+      <h2 className="titleEvent">
+        🏹Capitals & Countries<span className="bow">🏹</span>
+      </h2>
       <button onClick={handleAddElement}>Get a Country + Capital</button>
 
       {/* Mostrar la lista de elementos si es visible */}
@@ -32,8 +36,7 @@ const CapitalAndCountries = () => {
           <ul className="listItems">
             {elementsList.map((element, index) => (
               <li key={index}>
-                <p>!Cap!tals & Countries #{index + 1}</p>{" "}
-                {/* Muestra el número del elemento basado en el índice */}
+                <p>!Capitals & Countries #{index + 1}</p>
                 <span>!{element.country} = ? </span>
                 <p>
                   !{element.country} {">"} {element.capital}
@@ -44,11 +47,19 @@ const CapitalAndCountries = () => {
           </ul>
         </>
       )}
+
+      {/* Botón para ocultar o mostrar la lista */}
       <button onClick={handleHide} className="hide">
         {isVisible ? "Hide List" : "Show List"}
+      </button>
+
+      {/* Botón para limpiar la lista */}
+      <button onClick={handleClearList} className="buttonClear">
+        Clear List
       </button>
     </div>
   );
 };
 
 export default CapitalAndCountries;
+

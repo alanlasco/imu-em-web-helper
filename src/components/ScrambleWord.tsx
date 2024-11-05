@@ -6,6 +6,7 @@ const ScrambleWord = () => {
   const [inputValue, setInputValue] = useState<string>("");
   const [elementsList, setElementsList] = useState<ReversedWord[]>([]);
   const [isVisible, setIsVisible] = useState<boolean>(true);
+
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setInputValue(e.target.value); // Actualiza el valor del input
   };
@@ -29,6 +30,10 @@ const ScrambleWord = () => {
     }
   };
 
+  const handleClearList = () => {
+    setElementsList([]); // Vacía el array de elementos
+  };
+
   const handleHide = () => {
     setIsVisible(!isVisible); // Cambia la visibilidad de la lista
   };
@@ -39,7 +44,7 @@ const ScrambleWord = () => {
       <label>
         <span className="inputToolsText">Word to be Scrambled: </span>
         <input
-        className="inputTools"
+          className="inputTools"
           type="text"
           value={inputValue}
           onChange={handleInputChange}
@@ -48,7 +53,7 @@ const ScrambleWord = () => {
       </label>
       <button onClick={handleAddElement}>Add word</button>
 
-      {/* Mostrar la lista de palabras invertidas si es visible */}
+      {/* Mostrar la lista de palabras desordenadas si es visible */}
       {isVisible && (
         <>
           <ul className="listItems">
@@ -65,8 +70,14 @@ const ScrambleWord = () => {
           </ul>
         </>
       )}
+
       <button onClick={handleHide} className="hide">
         {isVisible ? "Hide list" : "Show list"}
+      </button>
+
+      {/* Botón para limpiar la lista */}
+      <button onClick={handleClearList}className="buttonClear">
+        Clear List
       </button>
     </div>
   );

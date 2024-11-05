@@ -6,6 +6,7 @@ const ReverseWord = () => {
   const [inputValue, setInputValue] = useState<string>("");
   const [elementsList, setElementsList] = useState<ReversedWord[]>([]);
   const [isVisible, setIsVisible] = useState<boolean>(true);
+
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setInputValue(e.target.value); // Actualiza el valor del input
   };
@@ -22,16 +23,21 @@ const ReverseWord = () => {
     }
   };
 
+  const handleClearList = () => {
+    setElementsList([]); // Vacía el array de elementos
+  };
+
   const handleHide = () => {
     setIsVisible(!isVisible); // Cambia la visibilidad de la lista
   };
 
   return (
     <div className="ChemicalSymbolContainer">
-      <h2 className="titleEvent">🏹Reversed Words<span className="bow">🏹</span> </h2>
+      <h2 className="titleEvent">
+        🏹Reversed Words<span className="bow">🏹</span>
+      </h2>
       <label>
-      <span className="inputToolsText">Word to be Reversed: </span>
-        
+        <span className="inputToolsText">Word to be Reversed: </span>
         <input
           className="inputTools"
           type="text"
@@ -59,8 +65,15 @@ const ReverseWord = () => {
           </ul>
         </>
       )}
+
+      {/* Botón para ocultar o mostrar la lista */}
       <button onClick={handleHide} className="hide">
         {isVisible ? "Hide list" : "Show list"}
+      </button>
+
+      {/* Botón para limpiar la lista */}
+      <button onClick={handleClearList} className="buttonClear">
+        Clear List
       </button>
     </div>
   );

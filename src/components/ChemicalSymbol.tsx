@@ -15,6 +15,10 @@ const ChemicalSymbol = () => {
     getRandomElement(); // Obtén un nuevo elemento
   };
 
+  const handleClearList = () => {
+    setElementsList([]); // Vacía el array de elementos
+  };
+
   const handleHide = () => {
     setIsVisible(!isVisible); // Cambia la visibilidad de la lista
   };
@@ -32,7 +36,6 @@ const ChemicalSymbol = () => {
             {elementsList.map((element, index) => (
               <li key={index}>
                 <p>!Chemical element #{index + 1}</p>{" "}
-                {/* Muestra el número del elemento basado en el índice */}
                 <span>!{element.symbol} = ? </span>
                 <p>
                   !{element.symbol} {">"} {element.name}
@@ -43,8 +46,15 @@ const ChemicalSymbol = () => {
           </ul>
         </>
       )}
+
+      {/* Botón para ocultar o mostrar la lista */}
       <button onClick={handleHide} className="hide">
         {isVisible ? "Hide List" : "Show List"}
+      </button>
+
+      {/* Botón para limpiar la lista */}
+      <button onClick={handleClearList} className="buttonClear">
+        Clear List
       </button>
     </div>
   );
