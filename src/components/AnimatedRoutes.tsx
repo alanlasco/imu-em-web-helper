@@ -7,9 +7,10 @@ import ChemicalSymbol from "./ChemicalSymbol";
 import { Home } from "./Home";
 import ReverseWord from "./ReverseWord";
 import ScrambleWord from "./ScrambleWord";
+import MathProblemComponent from "./Math"; // Asegúrate de importar el componente correcto
 
 export const AnimatedRoutes = () => {
-  const location = useLocation(); // Asegúrate de que useLocation esté en el contexto de BrowserRouter
+  const location = useLocation();
 
   return (
     <AnimatePresence>
@@ -20,6 +21,7 @@ export const AnimatedRoutes = () => {
         <Route path="/chemicalsymbol" element={<ChemicalSymbol />} />
         <Route path="/reverseword" element={<ReverseWord />} />
         <Route path="/scramble" element={<ScrambleWord />} />
+        <Route path="/math" element={<MathProblemComponent />} /> {/* Usa el componente importado */}
       </Routes>
     </AnimatePresence>
   );

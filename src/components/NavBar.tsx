@@ -75,6 +75,14 @@ export const Navbar = () => {
             >
               <Link to="/scramble">Scramble</Link>
             </li>
+            <li
+              onClick={() => setPaginaActiva("math")}
+              className={
+                paginaActiva === "math" ? "nav-item activo" : "nav-item"
+              }
+            >
+              <Link to="/math">Math</Link>
+            </li>
           </ul>
         </div>
 

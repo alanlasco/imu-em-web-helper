@@ -36,7 +36,7 @@ const CapitalAndCountries = () => {
           <ul className="listItems">
             {elementsList.map((element, index) => (
               <li key={index}>
-                <p>!Capitals & Countries #{index + 1}</p>
+                <p>!Cap!tals & Countries #{index + 1}</p>
                 <span>!{element.country} = ? </span>
                 <p>
                   !{element.country} {">"} {element.capital}
