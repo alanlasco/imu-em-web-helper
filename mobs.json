@@ -1,0 +1,804 @@
+[
+
+    {"regularMobs":[
+    {
+        "id": "1",
+        "name": "Hound",
+        "weapon": "Sword of Assassin",
+        "map": "Lorencia"
+    },
+    {
+        "id": "2",
+        "name": "Budge Dragon",
+        "weapon": "N/A",
+        "map": "Lorencia"
+    },
+    {
+        "id": "3",
+        "name": "Spider",
+        "weapon": "N/A",
+        "map": "Lorencia"
+    },
+    {
+        "id": "4",
+        "name": "Elite Bull Fighter",
+        "weapon": "Berdysh",
+        "map": "Lorencia"
+    },
+    {
+        "id": "7",
+        "name": "Giant",
+        "weapon": "Double Axe",
+        "map": "Lorencia"
+    },
+    {
+        "id": "9",
+        "name": "Thunder Lich",
+        "weapon": "Thunder Staff",
+        "map": "Lorencia"
+    },
+    {
+        "id": "413",
+        "name": "White Rabbit",
+        "weapon": "N/A",
+        "map": "Lorencia"
+    },
+    {
+        "id": "14",
+        "name": "Skeleton Warrior",
+        "weapon": "Gladius - Buckler",
+        "map": "Lorencia/Dungeon"
+    },
+    
+        {
+            "id": "5",
+            "name": "Hell Hound",
+            "weapon": "Falchion - Plate Shield",
+            "map": "Dungeon"
+        },
+        {
+            "id": "8",
+            "name": "Poisoned Bull Fighter",
+            "weapon": "Dreadscythe",
+            "map": "Dungeon"
+        },
+        {
+            "id": "10",
+            "name": "Dark Knight",
+            "weapon": "Double Blade",
+            "map": "Dungeon"
+        },
+        {
+            "id": "11",
+            "name": "Ghost",
+            "weapon": "N/A",
+            "map": "Dungeon"
+        },
+        {
+            "id": "12",
+            "name": "Larva",
+            "weapon": "N/A",
+            "map": "Dungeon"
+        },
+        {
+            "id": "13",
+            "name": "Hell Spider",
+            "weapon": "Serpent Staff",
+            "map": "Dungeon"
+        },
+
+        {
+            "id": "15",
+            "name": "Elite Skeleton",
+            "weapon": "Tomahawk - Skull Shield",
+            "map": "Dungeon"
+        },
+        {
+            "id": "17",
+            "name": "Cylops",
+            "weapon": "Crescent Axe",
+            "map": "Dungeon"
+        },
+        {
+            "id": "18",
+            "name": "Gorgon",
+            "weapon": "Gorgon Staff",
+            "map": "Dungeon"
+        },
+        {
+            "id": "19",
+            "name": "Yeti",
+            "weapon": "N/A",
+            "map": "Devias"
+        },
+        {
+            "id": "20",
+            "name": "Elite Yeti",
+            "weapon": "N/A",
+            "map": "Devias"
+        },
+        {
+            "id": "21",
+            "name": "Assassin",
+            "weapon": "Katana",
+            "map": "Devias"
+        },
+        {
+            "id": "22",
+            "name": "Ice Monster",
+            "weapon": "N/A",
+            "map": "Devias"
+        },
+        {
+            "id": "23",
+            "name": "Hommerd",
+            "weapon": "Larkan Axe - Large Round Shield",
+            "map": "Devias"
+        },
+        {
+            "id": "24",
+            "name": "Worm",
+            "weapon": "N/A",
+            "map": "Devias"
+        },    {
+            "id": "26",
+            "name": "Goblin",
+            "weapon": "Small Axe",
+            "map": "Noria"
+        },
+        {
+            "id": "27",
+            "name": "Chain Scorpion",
+            "weapon": "N/A",
+            "map": "Noria"
+        },
+        {
+            "id": "28",
+            "name": "Beetle Monster",
+            "weapon": "Spear",
+            "map": "Noria"
+        },
+        {
+            "id": "29",
+            "name": "Hunter",
+            "weapon": "Anguish Bow - (Arquebus)",
+            "map": "Noria"
+        },
+        {
+            "id": "30",
+            "name": "Forest Monster",
+            "weapon": "N/A",
+            "map": "Noria"
+        },
+        {
+            "id": "31",
+            "name": "Agon",
+            "weapon": "Serpent Sword",
+            "map": "Noria"
+        },
+        {
+            "id": "32",
+            "name": "Stone Golem",
+            "weapon": "N/A",
+            "map": "Noria"
+        },
+        {
+            "id": "33",
+            "name": "Elite Goblin",
+            "weapon": "Morning Star - Horn Shield",
+            "map": "Noria"
+        },{
+            "id": "34",
+            "name": "Cursed Wizard",
+            "weapon": "Legendary Staff - Legendary Shield",
+            "map": "Lost Tower"
+        },
+        {
+            "id": "35",
+            "name": "Death Gorgon",
+            "weapon": "Crescent Axe",
+            "map": "Lost Tower"
+        },
+        {
+            "id": "36",
+            "name": "Shadow",
+            "weapon": "N/A",
+            "map": "Lost Tower"
+        },
+        {
+            "id": "37",
+            "name": "Devil",
+            "weapon": "N/A",
+            "map": "Lost Tower"
+        },
+        {
+            "id": "38",
+            "name": "Balrog",
+            "weapon": "Balrog's Scythe",
+            "map": "Lost Tower"
+        },
+        {
+            "id": "39",
+            "name": "Poison Shadow",
+            "weapon": "N/A",
+            "map": "Lost Tower"
+        },
+        {
+            "id": "40",
+            "name": "Death Knight",
+            "weapon": "Lightning Sword",
+            "map": "Lost Tower"
+        },
+        {
+            "id": "41",
+            "name": "Death Cow",
+            "weapon": "Great Hammer",
+            "map": "Lost Tower"
+        },
+        {
+            "id": "N/A",
+            "name": "Evil Knight",
+            "weapon": "Sword of Destruction - Chaos Dragon Shield",
+            "map": "Lost Tower"
+        },
+        {
+            "id": "45",
+            "name": "Bahamut",
+            "weapon": "N/A",
+            "map": "Atlans"
+        },
+        {
+            "id": "46",
+            "name": "Vepar",
+            "weapon": "N/A",
+            "map": "Atlans"
+        },
+        {
+            "id": "47",
+            "name": "Valkyrie",
+            "weapon": "Blue-Wing Crossbow",
+            "map": "Atlans"
+        },
+        {
+            "id": "48",
+            "name": "Lizard King",
+            "weapon": "Resurrection Staff",
+            "map": "Atlans"
+        },
+        {
+            "id": "49",
+            "name": "Hydra",
+            "weapon": "N/A",
+            "map": "Atlans"
+        },
+        {
+            "id": "51",
+            "name": "Great Bahamut",
+            "weapon": "N/A",
+            "map": "Atlans"
+        },
+        {
+            "id": "52",
+            "name": "Silver Valkyrie",
+            "weapon": "Blue-Wing Crossbow",
+            "map": "Atlans"
+        },
+        {
+            "id": "57",
+            "name": "Iron Wheel",
+            "weapon": "Aqua-Gold Crossbow",
+            "map": "Tarkan"
+        },
+        {
+            "id": "58",
+            "name": "Tantalos",
+            "weapon": "Sword of Destruction",
+            "map": "Tarkan"
+        },
+        {
+            "id": "59",
+            "name": "Zaikan",
+            "weapon": "Staff of Destruction",
+            "map": "Tarkan"
+        },
+        {
+            "id": "60",
+            "name": "Bloody Wolf",
+            "weapon": "N/A",
+            "map": "Tarkan"
+        },
+        {
+            "id": "61",
+            "name": "Vim Knight",
+            "weapon": "N/A",
+            "map": "Tarkan"
+        },
+        {
+            "id": "62",
+            "name": "Mutant",
+            "weapon": "N/A",
+            "map": "Tarkan"
+        },
+        {
+            "id": "63",
+            "name": "Death Vim Knight",
+            "weapon": "N/A",
+            "map": "Tarkan"
+        },
+        {
+            "id": "69",
+            "name": "Alquamos",
+            "weapon": "Aqua-Gold Crossbow",
+            "map": "Icarus"
+        },
+        {
+            "id": "70",
+            "name": "Queen Rainer",
+            "weapon": "Sword of Destruction",
+            "map": "Icarus"
+        },
+        {
+            "id": "71",
+            "name": "Mega Crust",
+            "weapon": "Staff of Destruction",
+            "map": "Icarus"
+        },
+        {
+            "id": "72",
+            "name": "Phantom Knight",
+            "weapon": "Dark Breaker",
+            "map": "Icarus"
+        },
+        {
+            "id": "73",
+            "name": "Drakan",
+            "weapon": "N/A",
+            "map": "Icarus"
+        },
+        {
+            "id": "74",
+            "name": "Alpha Crust",
+            "weapon": "Thunder Blade - Legendary Shield",
+            "map": "Icarus"
+        },
+        {
+            "id": "75",
+            "name": "Great Drakan",
+            "weapon": "N/A",
+            "map": "Icarus"
+        },
+        {
+            "id": "77",
+            "name": "Phoenix of Darkness",
+            "weapon": "N/A",
+            "map": "Icarus"
+        },
+        {
+            "id": "304",
+            "name": "Witch Queen",
+            "weapon": "N/A",
+            "map": "Aida"
+        },
+        {
+            "id": "305",
+            "name": "Blue Golem",
+            "weapon": "N/A",
+            "map": "Aida"
+        },
+        {
+            "id": "306",
+            "name": "Death Rider",
+            "weapon": "N/A",
+            "map": "Aida"
+        },
+        {
+            "id": "307",
+            "name": "Forest Orc",
+            "weapon": "N/A",
+            "map": "Aida"
+        },
+        {
+            "id": "308",
+            "name": "Death Tree",
+            "weapon": "N/A",
+            "map": "Aida"
+        },
+        {
+            "id": "350",
+            "name": "Berserk",
+            "weapon": "N/A",
+            "map": "Kanturu"
+        },
+        {
+            "id": "351",
+            "name": "Splinter Wolf",
+            "weapon": "N/A",
+            "map": "Kanturu"
+        },
+        {
+            "id": "352",
+            "name": "Iron Rider",
+            "weapon": "N/A",
+            "map": "Kanturu"
+        },
+        {
+            "id": "353",
+            "name": "Satyros",
+            "weapon": "Black Reign Blade",
+            "map": "Kanturu"
+        },
+        {
+            "id": "354",
+            "name": "Blade Hunter",
+            "weapon": "N/A",
+            "map": "Kanturu"
+        },
+        {
+            "id": "355",
+            "name": "Kentauros",
+            "weapon": "N/A",
+            "map": "Kanturu"
+        },
+        {
+            "id": "356",
+            "name": "Gigantis",
+            "weapon": "N/A",
+            "map": "Kanturu"
+        },
+        {
+            "id": "357",
+            "name": "Genocider",
+            "weapon": "N/A",
+            "map": "Kanturu"
+        },
+        {
+            "id": "358",
+            "name": "Persona",
+            "weapon": "N/A",
+            "map": "Kanturu Relics"
+        },
+        {
+            "id": "359",
+            "name": "Twin Tail",
+            "weapon": "N/A",
+            "map": "Kanturu Relics"
+        },
+        {
+            "id": "N/A",
+            "name": "Left Hand of Maya",
+            "weapon": "N/A",
+            "map": "Kanturu Relics"
+        },
+        {
+            "id": "N/A",
+            "name": "Right Hand of Maya",
+            "weapon": "N/A",
+            "map": "Kanturu Relics"
+        },
+        {
+            "id": "N/A",
+            "name": "Nightmare",
+            "weapon": "N/A",
+            "map": "Kanturu Relics"
+        },
+        {
+            "id": "N/A",
+            "name": "Hammer Scout",
+            "weapon": "N/A",
+            "map": "Crywolf"
+        },
+        {
+            "id": "N/A",
+            "name": "Lance Scout",
+            "weapon": "N/A",
+            "map": "Crywolf"
+        },
+        {
+            "id": "N/A",
+            "name": "Bow Scout",
+            "weapon": "N/A",
+            "map": "Crywolf"
+        },
+        {
+            "id": "N/A",
+            "name": "Werewolf",
+            "weapon": "N/A",
+            "map": "Crywolf"
+        },
+        {
+            "id": "N/A",
+            "name": "Scout(Hero)",
+            "weapon": "N/A",
+            "map": "Crywolf"
+        },
+        {
+            "id": "N/A",
+            "name": "Werewolf(Hero)",
+            "weapon": "N/A",
+            "map": "Crywolf"
+        },
+        {
+            "id": "N/A",
+            "name": "Dark Elf",
+            "weapon": "N/A",
+            "map": "Crywolf"
+        },
+        {
+            "id": "N/A",
+            "name": "Soram",
+            "weapon": "N/A",
+            "map": "Crywolf"
+        },
+        {
+            "id": "N/A",
+            "name": "Balram",
+            "weapon": "N/A",
+            "map": "Crywolf"
+        },
+        {
+            "id": "N/A",
+            "name": "Balram Soldier",
+            "weapon": "N/A",
+            "map": "Barracks"
+        },
+        {
+            "id": "N/A",
+            "name": "Soram Officer",
+            "weapon": "N/A",
+            "map": "Barracks"
+        },
+        {
+            "id": "N/A",
+            "name": "Death Spirit Sergeant",
+            "weapon": "N/A",
+            "map": "Barracks"
+        },
+        {
+            "id": "N/A",
+            "name": "Dark Elf Commander",
+            "weapon": "N/A",
+            "map": "Refuge"
+        }]},
+        {"goldenMobs": [
+        {
+            "id": "43",
+            "name": "Golden Budge Dragon",
+            "weapon": "N/A",
+            "map": "Lorencia"
+        },
+        {
+            "id": "53",
+            "name": "Golden Titan",
+            "weapon": "N/A",
+            "map": "Devias"
+        },
+        {
+            "id": "54",
+            "name": "Golden Soldier",
+            "weapon": "Aqua-Gold Crossbow",
+            "map": "Devias"
+        },
+        {
+            "id": "78",
+            "name": "Golden Goblin",
+            "weapon": "Small Axe",
+            "map": "Noria"
+        },
+        {
+            "id": "79",
+            "name": "Golden Dragon",
+            "weapon": "N/A",
+            "map": "N/A"
+        },
+        {
+            "id": "80",
+            "name": "Golden Lizard King",
+            "weapon": "Chaos Lightning Staff",
+            "map": "Atlans"
+        },
+        {
+            "id": "81",
+            "name": "Golden Vepar",
+            "weapon": "N/A",
+            "map": "Atlans"
+        },
+        {
+            "id": "82",
+            "name": "Golden Tantalos",
+            "weapon": "Sword of Destruction",
+            "map": "Tarkan"
+        },
+        {
+            "id": "83",
+            "name": "Golden Iron Wheel",
+            "weapon": "Aqua-Gold Crossbow",
+            "map": "Tarkan"
+        }]},
+        {"bloodCastle": [
+        {
+            "id": "64",
+            "name": "Orc Archer",
+            "weapon": "Dark Stinger Bow",
+            "map": "Blood Castle"
+        },
+        {
+            "id": "65",
+            "name": "King Orc",
+            "weapon": "N/A",
+            "map": "Blood Castle"
+        },
+        {
+            "id": "86",
+            "name": "Spirit Soldier",
+            "weapon": "Crescent Axe",
+            "map": "Blood Castle"
+        },
+        {
+            "id": "87",
+            "name": "Spirit Beast",
+            "weapon": "N/A",
+            "map": "Blood Castle"
+        },
+        {
+            "id": "88",
+            "name": "Spirit Knight",
+            "weapon": "Chaos Dragon Axe",
+            "map": "Blood Castle"
+        },
+        {
+            "id": "89",
+            "name": "Spirit Sorcerer",
+            "weapon": "Skull Staff",
+            "map": "Blood Castle"
+        }]},
+        {"chaosCastle": [
+        {
+            "id": "162",
+            "name": "Chaos Warrior",
+            "weapon": "Sword of Destruction",
+            "map": "Chaos Castle"
+        },
+        {
+            "id": "165",
+            "name": "Chaos Archer",
+            "weapon": "Great Reign Crossbow",
+            "map": "Chaos Castle"
+        }]},
+        {"kalima": [
+        {
+            "id": "144",
+            "name": "Death Angel",
+            "weapon": "N/A",
+            "map": "Kalima"
+        },
+        {
+            "id": "145",
+            "name": "Death Centurion",
+            "weapon": "Dragon Spear",
+            "map": "Kalima"
+        },
+        {
+            "id": "146",
+            "name": "Blood Soldier",
+            "weapon": "N/A",
+            "map": "Kalima"
+        },
+        {
+            "id": "147",
+            "name": "Aegis",
+            "weapon": "N/A",
+            "map": "Kalima"
+        },
+        {
+            "id": "148",
+            "name": "Centurion",
+            "weapon": "Dragon Spear",
+            "map": "Kalima"
+        },
+        {
+            "id": "149",
+            "name": "Necron",
+            "weapon": "N/A",
+            "map": "Kalima"
+        },
+        {
+            "id": "160",
+            "name": "Schriker",
+            "weapon": "Double Blade",
+            "map": "Kalima"
+        },
+        {
+            "id": "161",
+            "name": "Illusion of Kundun",
+            "weapon": "Double Blade",
+            "map": "Kalima"
+        }]},
+        {"landOfTrials": [
+        {
+            "id": "290",
+            "name": "Lizard Warrior",
+            "weapon": "N/A",
+            "map": "Land of Trials"
+        },
+        {
+            "id": "291",
+            "name": "Fire Golem",
+            "weapon": "N/A",
+            "map": "Land of Trials"
+        },
+        {
+            "id": "292",
+            "name": "Queen Bee",
+            "weapon": "N/A",
+            "map": "Land of Trials"
+        },
+        {
+            "id": "293",
+            "name": "Poisoned Golem",
+            "weapon": "N/A",
+            "map": "Land of Trials"
+        },
+        {
+            "id": "294",
+            "name": "Axe Warrior",
+            "weapon": "N/A",
+            "map": "Land of Trials"
+        },
+        {
+            "id": "300",
+            "name": "Hero Mutant",
+            "weapon": "N/A",
+            "map": "Land of Trials"
+        },
+        {
+            "id": "301",
+            "name": "Omega Wing",
+            "weapon": "Thunder Blade - Legendary Shield",
+            "map": "Land of Trials"
+        },
+        {
+            "id": "302",
+            "name": "Hero Axe Warrior",
+            "weapon": "N/A",
+            "map": "Land of Trials"
+        },
+        {
+            "id": "303",
+            "name": "Hero Poisoned Golem",
+            "weapon": "N/A",
+            "map": "Land of Trials"
+        }]},
+        {"bossMobs": [
+        {
+            "id": "50",
+            "name": "Ancalagon the Black",
+            "weapon": "N/A",
+            "map": "Niflheim"
+        },
+        {
+            "id": "275",
+            "name": "Lord Kundun",
+            "weapon": "N/A",
+            "map": "Kalima"
+        },
+        {
+            "id": "295",
+            "name": "Erohim",
+            "weapon": "N/A",
+            "map": "Land of Trials"
+        },
+        {
+            "id": "309",
+            "name": "Hellmaine",
+            "weapon": "N/A",
+            "map": "Aida"
+        },
+        {
+            "id": "360",
+            "name": "Lemulia",
+            "weapon": "N/A",
+            "map": "Niflheim"
+        }]}
+
+    
+]
