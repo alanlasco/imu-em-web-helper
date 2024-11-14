@@ -28,6 +28,7 @@ const AtomicNumber = () => {
       <div className="greenLight"></div>
       <div className="card">
       <h2 className="titleEvent">🏹Atomic Number<span className="bow">🏹</span> </h2>
+      <p className="description">Press the button to get a random element and its Atomic number</p>
       <button onClick={handleAddElement}>Get element + Atomic Number</button>
       </div>
       {/* Mostrar la lista de elementos si es visible */}

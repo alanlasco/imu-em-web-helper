@@ -43,6 +43,7 @@ const ScrambleWord = () => {
       <div className="greenLight"></div>
       <div className="card">
       <h2 className="titleEvent">🏹Scramble<span className="bow">🏹</span> </h2>
+      <p className="description"> Paste a word of choice, then click the button to scramble the word</p>
       <label>
         <span className="inputToolsText">Word to be Scrambled: </span>
         <input

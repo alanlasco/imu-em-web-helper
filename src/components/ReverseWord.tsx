@@ -38,6 +38,7 @@ const ReverseWord = () => {
       <h2 className="titleEvent">
         🏹Reversed Words<span className="bow">🏹</span>
       </h2>
+      <p className="description"> Paste a word of choice, then click the button to reverse the word</p>
       <label>
         <span className="inputToolsText">Word to be Reversed: </span>
         <input

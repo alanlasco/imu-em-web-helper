@@ -28,6 +28,7 @@ const MathProblemComponent = () => {
       <h2 className="titleEvent">
         🏹Math<span className="bow">🏹</span>
       </h2>
+      <p className="description"> Press the button to get a random math problem; to get the results, the problems are solved by an internal calculator</p>
       <button onClick={handleAddProblem}>Generate Math Problem</button>
       </div>
       {/* Mostrar la lista de problemas si es visible */}

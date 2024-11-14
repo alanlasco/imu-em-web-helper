@@ -30,6 +30,10 @@ const CapitalAndCountries = () => {
       <h2 className="titleEvent">
         🏹Capitals & Countries<span className="bow">🏹</span>
       </h2>
+      <p className="description"> Press the button to get a random country</p>
+      <p className="description"> and its capital; Suggestion: keep an eye</p>
+      <p className="description"> on Player's answers.</p>
+      <p className="description"> Some capitals are out-dated </p>
       <button onClick={handleAddElement}>Get a Country + Capital</button>
       </div>
       {/* Mostrar la lista de elementos si es visible */}
