@@ -21,6 +21,10 @@
     /* Incluye padding en el ancho total */
 }
 
+.right{
+    padding-left: .4em;
+}
+
 .left {
 
     border-right: 1px solid #ccc;
