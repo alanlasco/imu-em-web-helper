@@ -74,3 +74,32 @@ button {
 .inputTools{
     height: 2.5rem;
 }
+.card{
+        padding: 1.8rem;
+
+
+    
+
+    
+    
+    
+        background: #2d3037;
+        border-radius: 4px;
+
+    
+    
+    
+}
+
+.greenLight {
+    height: 6px;
+    background-color: #90ee90;
+    ;
+    box-shadow: #90ee90 0px 0px 25px -1px;
+    top: 0;
+
+}
+
+.CardContainer{
+    margin-top: 2rem;
+}

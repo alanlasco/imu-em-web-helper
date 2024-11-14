@@ -21,12 +21,15 @@ const MathProblemComponent = () => {
   };
 
   return (
-    <div className="MathProblemContainer">
+   
+    <div className="CardContainer">
+      <div className="greenLight"></div>
+      <div className="card">
       <h2 className="titleEvent">
         🏹Math<span className="bow">🏹</span>
       </h2>
       <button onClick={handleAddProblem}>Generate Math Problem</button>
-
+      </div>
       {/* Mostrar la lista de problemas si es visible */}
       {isVisible && (
         <>

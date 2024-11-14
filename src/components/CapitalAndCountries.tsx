@@ -24,12 +24,14 @@ const CapitalAndCountries = () => {
   };
 
   return (
-    <div className="ChemicalSymbolContainer">
+    <div className="CardContainer">
+      <div className="greenLight"></div>
+      <div className="card">
       <h2 className="titleEvent">
         🏹Capitals & Countries<span className="bow">🏹</span>
       </h2>
       <button onClick={handleAddElement}>Get a Country + Capital</button>
-
+      </div>
       {/* Mostrar la lista de elementos si es visible */}
       {isVisible && (
         <>

@@ -24,10 +24,12 @@ const ChemicalSymbol = () => {
   };
 
   return (
-    <div className="ChemicalSymbolContainer">
+    <div className="CardContainer">
+      <div className="greenLight"></div>
+      <div className="card">
       <h2 className="titleEvent">🏹Chemical Symbol<span className="bow">🏹</span> </h2>
       <button onClick={handleAddElement}>Get element + symbol</button>
-
+      </div>
       {/* Mostrar la lista de elementos si es visible */}
       {isVisible && (
         <>

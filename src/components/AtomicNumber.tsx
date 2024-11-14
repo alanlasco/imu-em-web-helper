@@ -24,10 +24,12 @@ const AtomicNumber = () => {
   };
 
   return (
-    <div className="ChemicalSymbolContainer">
+    <div className="CardContainer">
+      <div className="greenLight"></div>
+      <div className="card">
       <h2 className="titleEvent">🏹Atomic Number<span className="bow">🏹</span> </h2>
       <button onClick={handleAddElement}>Get element + Atomic Number</button>
-
+      </div>
       {/* Mostrar la lista de elementos si es visible */}
       {isVisible && (
         <>

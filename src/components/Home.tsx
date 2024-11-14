@@ -1,9 +1,15 @@
 import React from "react";
 import "../styles/Home.css"
+
+
 import { MdMenu } from "react-icons/md";
 import mu from "../assets/mu.png";
 export const Home = () => {
-  return <div className="HomeContaier">
+  return <>
+   <div className="HomeContaier">
+    <div className="greenLight"></div>
+    <div className="CardContainerHome">
+
     <div className="welcomeContainer">
     <p className="welcome"><img className="muImg" src={mu} alt="MU Light" />Welcome to:   </p>
     <strong className="Em">🏹Event Master's Web Tool<span className="bow">🏹</span> </strong> 
@@ -50,5 +56,5 @@ export const Home = () => {
       <br />
 
 
-  </div>;
+      </div> </div></>;
 };

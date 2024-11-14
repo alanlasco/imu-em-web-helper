@@ -39,7 +39,9 @@ const ScrambleWord = () => {
   };
 
   return (
-    <div className="ChemicalSymbolContainer">
+    <div className="CardContainer">
+      <div className="greenLight"></div>
+      <div className="card">
       <h2 className="titleEvent">🏹Scramble<span className="bow">🏹</span> </h2>
       <label>
         <span className="inputToolsText">Word to be Scrambled: </span>
@@ -52,7 +54,7 @@ const ScrambleWord = () => {
         />
       </label>
       <button onClick={handleAddElement}>Add word</button>
-
+      </div>
       {/* Mostrar la lista de palabras desordenadas si es visible */}
       {isVisible && (
         <>
