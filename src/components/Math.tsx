@@ -36,7 +36,7 @@ const MathProblemComponent = () => {
                 <p>!Math #{index + 1}</p>
                 <span>! {item.problem} = ? </span>
                 <p>
-                  ! {item.problem} {">"} {item.result}
+                  ! Answer {">"} {item.result}
                 </p>
                 <hr className="separador" />
               </li>

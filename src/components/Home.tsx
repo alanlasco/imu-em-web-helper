@@ -23,6 +23,9 @@ export const Home = () => {
         <li className="listE">
           Chemical Symbol of the element
         </li>
+        <li className="listE">
+          Math
+        </li>
         <li className="listE">Capitals and countries</li>
         <br />
         <li className="listEt">Tools:</li>
