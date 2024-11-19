@@ -86,7 +86,7 @@ export const Navbar = () => {
             <li
               onClick={() => setPaginaActiva("countriesandcontinents")}
               className={
-                paginaActiva === "countriesandcontinent" ? "nav-item activo" : "nav-item"
+                paginaActiva === "countriesandcontinents" ? "nav-item activo" : "nav-item"
               }
             >
               <Link to="/countriesandcontinent">Countries And Continents</Link>

@@ -35,7 +35,8 @@ const ContinentAndCountries = () => {
         <p className="description"> and its continent; Suggestion: keep an eye</p>
         <p className="description"> on Player's answers.</p>
         <p className="description"> Some continents and Countries may vary </p>
-        <p className="description"> I suggest to ignore if it is a southern or northern continent </p>
+        <p className="description"> For the countries of America, I suggest ignoring whether they are from the North or South. </p>
+        <p className="description"> 'America' could be considered valid to avoid any discussion with players.</p>
         <button onClick={handleAddElement}>Get a Country + Continent</button>
       </div>
       
