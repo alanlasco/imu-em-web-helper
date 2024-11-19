@@ -33,6 +33,7 @@ export const Home = () => {
           Math
         </li>
         <li className="listE">Capitals and countries</li>
+        <li className="listE">Countries and Continents</li>
         <br />
         <li className="listEt">Tools:</li>
         <ul className="list">
