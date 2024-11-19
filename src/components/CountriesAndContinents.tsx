@@ -35,6 +35,7 @@ const ContinentAndCountries = () => {
         <p className="description"> and its continent; Suggestion: keep an eye</p>
         <p className="description"> on Player's answers.</p>
         <p className="description"> Some continents and Countries may vary </p>
+        <p className="description"> I suggest to ignore if it is a southern or northern continent </p>
         <button onClick={handleAddElement}>Get a Country + Continent</button>
       </div>
       
