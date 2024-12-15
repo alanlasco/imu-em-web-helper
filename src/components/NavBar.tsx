@@ -91,6 +91,14 @@ export const Navbar = () => {
             >
               <Link to="/countriesandcontinent">Countries And Continents</Link>
             </li>
+            <li
+              onClick={() => setPaginaActiva("mapofthemobs")}
+              className={
+                paginaActiva === "mapofthemobs" ? "nav-item activo" : "nav-item"
+              }
+            >
+              <Link to="/mapofthemobs">Map of the Mobs</Link>
+            </li>
           </ul>
         </div>
 

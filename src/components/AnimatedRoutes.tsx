@@ -9,6 +9,7 @@ import ReverseWord from "./ReverseWord";
 import ScrambleWord from "./ScrambleWord";
 import MathProblemComponent from "./Math"; // Asegúrate de importar el componente correcto
 import ContinentAndCountries from "./CountriesAndContinents";
+import MapOfTheMobs from "./MapOfTheMob";
 
 export const AnimatedRoutes = () => {
   const location = useLocation();
@@ -24,6 +25,7 @@ export const AnimatedRoutes = () => {
         <Route path="/scramble" element={<ScrambleWord />} />
         <Route path="/math" element={<MathProblemComponent />} /> {/* Usa el componente importado */}
         <Route path="/countriesandcontinent" element={<ContinentAndCountries/>} />
+        <Route path="/mapofthemobs" element={<MapOfTheMobs/>} />
       </Routes>
     </AnimatePresence>
   );
