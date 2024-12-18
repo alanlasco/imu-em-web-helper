@@ -18,14 +18,36 @@ export const AnimatedRoutes = () => {
     <AnimatePresence>
       <Routes location={location} key={location.pathname}>
         <Route path="/imu-em-web-helper" element={<Home />} />
-        <Route path="/atomicnumber" element={<AtomicNumber />} />
-        <Route path="/capitalsandcountries" element={<CapitalAndCountries />} />
-        <Route path="/chemicalsymbol" element={<ChemicalSymbol />} />
-        <Route path="/reverseword" element={<ReverseWord />} />
-        <Route path="/scramble" element={<ScrambleWord />} />
-        <Route path="/math" element={<MathProblemComponent />} /> {/* Usa el componente importado */}
-        <Route path="/countriesandcontinent" element={<ContinentAndCountries/>} />
-        <Route path="/mapofthemobs" element={<MapOfTheMobs/>} />
+        <Route
+          path="/imu-em-web-helper/atomicnumber"
+          element={<AtomicNumber />}
+        />
+        <Route
+          path="/imu-em-web-helper/capitalsandcountries"
+          element={<CapitalAndCountries />}
+        />
+        <Route
+          path="/imu-em-web-helper/chemicalsymbol"
+          element={<ChemicalSymbol />}
+        />
+        <Route
+          path="/imu-em-web-helper/reverseword"
+          element={<ReverseWord />}
+        />
+        <Route path="/imu-em-web-helper/scramble" element={<ScrambleWord />} />
+        <Route
+          path="/imu-em-web-helper/math"
+          element={<MathProblemComponent />}
+        />{" "}
+        {/* Usa el componente importado */}
+        <Route
+          path="/imu-em-web-helper/countriesandcontinent"
+          element={<ContinentAndCountries />}
+        />
+        <Route
+          path="/imu-em-web-helper/mapofthemobs"
+          element={<MapOfTheMobs />}
+        />
       </Routes>
     </AnimatePresence>
   );

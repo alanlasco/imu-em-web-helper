@@ -37,7 +37,7 @@ export const Navbar = () => {
                 paginaActiva === "atomicnumber" ? "nav-item activo" : "nav-item"
               }
             >
-              <Link to="/atomicnumber">Atomic Number</Link>
+              <Link to="/imu-em-web-helper/atomicnumber">Atomic Number</Link>
             </li>
             <li
               onClick={() => setPaginaActiva("capitalsandcountries")}
@@ -47,7 +47,9 @@ export const Navbar = () => {
                   : "nav-item"
               }
             >
-              <Link to="/capitalsandcountries">Capitals & Countries</Link>
+              <Link to="/imu-em-web-helper/capitalsandcountries">
+                Capitals & Countries
+              </Link>
             </li>
             <li
               onClick={() => setPaginaActiva("chemicalsymbol")}
@@ -57,7 +59,9 @@ export const Navbar = () => {
                   : "nav-item"
               }
             >
-              <Link to="/chemicalsymbol">Chemical Symbol</Link>
+              <Link to="/imu-em-web-helper/chemicalsymbol">
+                Chemical Symbol
+              </Link>
             </li>
             <li
               onClick={() => setPaginaActiva("reverseword")}
@@ -65,7 +69,7 @@ export const Navbar = () => {
                 paginaActiva === "reverseword" ? "nav-item activo" : "nav-item"
               }
             >
-              <Link to="/reverseword">Reversed Words</Link>
+              <Link to="/imu-em-web-helper/reverseword">Reversed Words</Link>
             </li>
             <li
               onClick={() => setPaginaActiva("scramble")}
@@ -73,7 +77,7 @@ export const Navbar = () => {
                 paginaActiva === "scramble" ? "nav-item activo" : "nav-item"
               }
             >
-              <Link to="/scramble">Scramble</Link>
+              <Link to="/imu-em-web-helper/scramble">Scramble</Link>
             </li>
             <li
               onClick={() => setPaginaActiva("math")}
@@ -81,15 +85,19 @@ export const Navbar = () => {
                 paginaActiva === "math" ? "nav-item activo" : "nav-item"
               }
             >
-              <Link to="/math">Math</Link>
+              <Link to="/imu-em-web-helper/math">Math</Link>
             </li>
             <li
               onClick={() => setPaginaActiva("countriesandcontinents")}
               className={
-                paginaActiva === "countriesandcontinents" ? "nav-item activo" : "nav-item"
+                paginaActiva === "countriesandcontinents"
+                  ? "nav-item activo"
+                  : "nav-item"
               }
             >
-              <Link to="/countriesandcontinent">Countries And Continents</Link>
+              <Link to="/imu-em-web-helper/countriesandcontinent">
+                Countries And Continents
+              </Link>
             </li>
             <li
               onClick={() => setPaginaActiva("mapofthemobs")}
@@ -97,7 +105,7 @@ export const Navbar = () => {
                 paginaActiva === "mapofthemobs" ? "nav-item activo" : "nav-item"
               }
             >
-              <Link to="/mapofthemobs">Map of the Mobs</Link>
+              <Link to="/imu-em-web-helper/mapofthemobs">Map of the Mobs</Link>
             </li>
           </ul>
         </div>
