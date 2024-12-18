@@ -48,7 +48,8 @@ body {
     margin: 0 auto;
     padding: 15px;
     display: flex;
-    justify-content: center;
+    padding-top: 7rem;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -89,11 +90,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3.5rem;
+    gap: 1.5rem;
     position: fixed;
     top: 6rem;
     right: 0;
-    width: 23%;
+    width: 22%;
     height: 100%;
     background: #2d3037;
     flex-direction: column;
